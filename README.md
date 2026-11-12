@@ -41,7 +41,7 @@ Most commercial cleaning tools bundle background telemetry daemons, persistent s
 WinPurge bridges this gap: zero installation footprint, transparent execution, active locked-file accounting, and protective default prompts.
 
 <p align="center">
-  <img src="assets/feature-matrix.svg" width="640" alt="WinPurge Feature &amp; Safety Comparison Matrix" />
+  <img src="assets/feature-matrix.svg" width="760" alt="WinPurge Feature &amp; Safety Comparison Matrix" />
 </p>
 
 ---
