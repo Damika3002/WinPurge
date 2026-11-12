@@ -1,0 +1,21 @@
+# Local Environment Configuration
+.env
+
+# Runtime Logs & Caches
+*.log
+*.tmp
+*.cache
+sizes.cache
+dism.txt
+
+# Generated Exports & Backups
+installed_apps.csv
+leftovers.csv
+reg_backup/
+registry_backup/
+
+# Operating System & Editor Metadata
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/

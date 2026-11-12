@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330" width="100%" height="100%">
+  <defs>
+    <style>
+      .win-frame { fill: #f0f0f0; stroke: #999999; stroke-width: 1; }
+      .win-titlebar { fill: #ffffff; }
+      .title-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; fill: #1a1a1a; }
+      .heading-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #000000; }
+      .label-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 11.5px; fill: #333333; text-anchor: end; }
+      .value-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 11.5px; fill: #000000; }
+      .value-bold { font-family: "Segoe UI", Arial, sans-serif; font-size: 11.5px; font-weight: 700; fill: #000000; }
+      .btn { fill: #e1e1e1; stroke: #adadad; stroke-width: 1; }
+      .btn-focus { fill: #e1e1e1; stroke: #0078d7; stroke-width: 1.5; }
+      .btn-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 11.5px; fill: #000000; text-anchor: middle; }
+      .note-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 11px; fill: #222222; }
+      .link-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 11px; fill: #0066cc; text-decoration: underline; }
+    </style>
+  </defs>
+
+  <!-- Dialog Frame -->
+  <rect x="0" y="0" width="460" height="330" class="win-frame" />
+
+  <!-- White Titlebar -->
+  <rect x="0" y="0" width="460" height="28" class="win-titlebar" />
+  <text x="10" y="19" class="title-text">Open File - Security Warning</text>
+
+  <!-- Close button X -->
+  <line x1="438" y1="10" x2="446" y2="18" stroke="#333333" stroke-width="1" />
+  <line x1="446" y1="10" x2="438" y2="18" stroke="#333333" stroke-width="1" />
+
+  <!-- Main Question / Warning -->
+  <text x="18" y="52" class="heading-text">The publisher could not be verified. Are you sure you want to run this</text>
+  <text x="18" y="68" class="heading-text">software?</text>
+
+  <!-- Batch File Icon -->
+  <g transform="translate(20, 84)">
+    <rect x="0" y="0" width="28" height="22" fill="#ffffff" stroke="#666666" stroke-width="1" />
+    <rect x="0" y="0" width="28" height="5" fill="#0078d7" />
+    <!-- Gear cog wheels inside icon -->
+    <circle cx="9" cy="13" r="4" fill="none" stroke="#666666" stroke-width="1.5" />
+    <circle cx="17" cy="15" r="3" fill="none" stroke="#666666" stroke-width="1.5" />
+  </g>
+
+  <!-- File Properties List -->
+  <g transform="translate(0, 10)">
+    <text x="120" y="86" class="label-text">Name:</text>
+    <text x="128" y="86" class="value-text">...cleaner\winpurge.bat</text>
+
+    <text x="120" y="108" class="label-text">Publisher:</text>
+    <text x="128" y="108" class="value-bold">Unknown Publisher</text>
+
+    <text x="120" y="130" class="label-text">Type:</text>
+    <text x="128" y="130" class="value-text">Windows Batch File</text>
+
+    <text x="120" y="152" class="label-text">From:</text>
+    <text x="128" y="152" class="value-text">C:\Users\...\Desktop\cleaner\winpurge.bat</text>
+  </g>
+
+  <!-- Action Buttons -->
+  <!-- Run Button -->
+  <rect x="245" y="180" width="84" height="24" class="btn" />
+  <text x="287" y="196" class="btn-text">Run</text>
+
+  <!-- Cancel Button -->
+  <rect x="340" y="180" width="84" height="24" class="btn-focus" />
+  <text x="382" y="196" class="btn-text">Cancel</text>
+
+  <!-- Checkbox: Always ask before opening this file -->
+  <g transform="translate(18, 222)">
+    <rect x="0" y="0" width="13" height="13" fill="#ffffff" stroke="#333333" stroke-width="1" />
+    <polyline points="2,6 5,10 11,2" fill="none" stroke="#0078d7" stroke-width="1.8" />
+    <text x="20" y="11" font-family="Segoe UI, Arial, sans-serif" font-size="11.5px" fill="#000000">Always ask before opening this file</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="0" y1="248" x2="460" y2="248" stroke="#dcdcdc" stroke-width="1" />
+
+  <!-- Bottom Section: Shield & Explanation -->
+  <g transform="translate(20, 262)">
+    <!-- Red Shield with X -->
+    <path d="M 12 0 L 24 5 L 24 14 C 24 21 12 28 12 28 C 12 28 0 21 0 14 L 0 5 Z" fill="#d32f2f" />
+    <line x1="8" y1="9" x2="16" y2="17" stroke="#ffffff" stroke-width="2" />
+    <line x1="16" y1="9" x2="8" y2="17" stroke="#ffffff" stroke-width="2" />
+
+    <text x="36" y="12" class="note-text">This file does not have a valid digital signature that verifies its</text>
+    <text x="36" y="26" class="note-text">publisher. You should only run software from publishers you trust.</text>
+    <text x="36" y="44" class="link-text">How can I decide what software to run?</text>
+  </g>
+</svg>

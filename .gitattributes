@@ -1,0 +1,9 @@
+# Enforce CRLF line endings for Windows Batch scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.vbs text eol=crlf
+
+# Markdown & Documentation
+*.md text
+*.txt text
+LICENSE text

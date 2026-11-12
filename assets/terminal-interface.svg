@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" width="100%" height="100%">
+  <defs>
+    <style>
+      .win-border { fill: #0c0c0c; stroke: #2d2d2d; stroke-width: 1; }
+      .win-titlebar { fill: #ffffff; }
+      .win-title { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; fill: #1a1a1a; }
+      .win-btn { fill: none; stroke: #333333; stroke-width: 1; }
+      .cmd-text { font-family: "Consolas", "Courier New", monospace; font-size: 11.5px; fill: #cccccc; }
+      .c-cyan { fill: #38bdf8; font-weight: bold; }
+      .c-white { fill: #ffffff; font-weight: bold; }
+      .c-green { fill: #16c60c; font-weight: bold; }
+      .c-yellow { fill: #f5c518; }
+      .c-red { fill: #e74856; font-weight: bold; }
+      .c-gray { fill: #767676; }
+      .scroll-track { fill: #171717; }
+      .scroll-thumb { fill: #484848; }
+    </style>
+  </defs>
+
+  <!-- Window Frame -->
+  <rect x="0" y="0" width="680" height="520" class="win-border" />
+
+  <!-- Windows 10 Titlebar (White background, standard classic theme) -->
+  <rect x="0" y="0" width="680" height="30" class="win-titlebar" />
+
+  <!-- CMD Icon: Black square with C:\_ in white -->
+  <rect x="8" y="7" width="16" height="16" fill="#0c0c0c" rx="1" />
+  <text x="10" y="19" font-family="Consolas, monospace" font-size="8.5" font-weight="bold" fill="#ffffff">C:\</text>
+
+  <!-- Title Text (Left aligned next to icon) -->
+  <text x="32" y="20" class="win-title">Administrator: WinPurge v1.0</text>
+
+  <!-- Window Control Buttons (Right aligned) -->
+  <!-- Minimize Button -->
+  <line x1="562" y1="16" x2="572" y2="16" class="win-btn" />
+  <!-- Maximize Button -->
+  <rect x="604" y="10" width="10" height="10" class="win-btn" />
+  <!-- Close Button -->
+  <line x1="648" y1="11" x2="656" y2="19" class="win-btn" />
+  <line x1="656" y1="11" x2="648" y2="19" class="win-btn" />
+
+  <!-- Scrollbar on Right Edge -->
+  <rect x="664" y="30" width="16" height="490" class="scroll-track" />
+  <rect x="666" y="34" width="12" height="110" class="scroll-thumb" rx="1" />
+
+  <!-- Console Text Area -->
+  <g transform="translate(14, 46)" class="cmd-text">
+    <text x="0" y="0" class="c-cyan">================================================================</text>
+    <text x="145" y="14" class="c-white">W I N P U R G E   v 1 . 0</text>
+    <text x="90" y="28" class="c-gray">High-Performance System Cleaner for Windows</text>
+    <text x="0" y="42" class="c-cyan">================================================================</text>
+
+    <text x="0" y="62" class="c-gray">Privilege Level : <tspan class="c-green">Full Administrator [Elevated]</tspan></text>
+    <text x="0" y="77" class="c-gray">Target Volume   : <tspan class="c-white">C:</tspan></text>
+    <text x="0" y="92" class="c-gray">Network Status  : <tspan class="c-green">Online [Internet Verified]</tspan></text>
+
+    <text x="0" y="112" class="c-cyan">----------------------------------------------------------------</text>
+    <text x="0" y="126" class="c-white">Beginning system cleanup sequence...</text>
+    <text x="0" y="139" class="c-cyan">----------------------------------------------------------------</text>
+
+    <text x="0" y="157" class="c-white">[1/6] Cleaning User Temporary Files...</text>
+    <text x="42" y="171">[ <tspan class="c-green"> OK </tspan> ] User temporary files: 1 file[s] removed [<tspan class="c-yellow">22 in use/skipped</tspan>].</text>
+
+    <text x="0" y="189" class="c-white">[2/6] Cleaning System Temporary Files...</text>
+    <text x="42" y="203">[ <tspan class="c-green"> OK </tspan> ] System temporary files: 2 file[s] removed [<tspan class="c-yellow">1 in use/skipped</tspan>].</text>
+
+    <text x="0" y="221" class="c-white">[3/6] Cleaning Windows Prefetch Cache...</text>
+    <text x="42" y="235">[ <tspan class="c-green"> OK </tspan> ] Windows prefetch cache: 45 file[s] removed [<tspan class="c-yellow">1 in use/skipped</tspan>].</text>
+
+    <text x="0" y="253" class="c-white">[4/6] Cleaning Windows Update Download Cache...</text>
+    <text x="42" y="267">[ <tspan class="c-yellow">SKIP</tspan> ] Windows Update cache: Already empty [0 files].</text>
+
+    <text x="0" y="285" class="c-white">[5/6] Cleaning Superseded Component Store [DISM]...</text>
+    <text x="42" y="299" class="c-gray">Launching live DISM servicing [native progress below]...</text>
+    <text x="42" y="313" class="c-gray">[===========                20.0%                          ]</text>
+    <text x="42" y="327" class="c-gray">The operation completed successfully.</text>
+    <text x="42" y="341">[ <tspan class="c-green"> OK </tspan> ] DISM component store cleanup completed.</text>
+
+    <text x="0" y="359" class="c-white">[6/6] Processing Recycle Bin...</text>
+    <text x="42" y="373">[ <tspan class="c-green"> OK </tspan> ] Recycle Bin permanently emptied.</text>
+
+    <text x="0" y="392" class="c-cyan">================================================================</text>
+    <text x="180" y="406" class="c-white">CLEANUP SUMMARY</text>
+    <text x="0" y="420" class="c-cyan">================================================================</text>
+    <text x="12" y="435">Files Removed            : <tspan class="c-green">48 file[s]</tspan></text>
+    <text x="12" y="449">In Use / Skipped Files   : <tspan class="c-yellow">24 file[s]</tspan></text>
+    <text x="12" y="463">Target Drive Free Space  : <tspan class="c-green">+1,240 MB</tspan></text>
+    <text x="0" y="476" class="c-cyan">================================================================</text>
+  </g>
+</svg>

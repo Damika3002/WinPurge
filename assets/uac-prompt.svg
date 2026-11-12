@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="100%" height="100%">
+  <defs>
+    <style>
+      .uac-frame { fill: #fdfcf7; stroke: #4ba3e3; stroke-width: 1; }
+      .uac-header { fill: #4ba3e3; }
+      .uac-title { font-family: "Segoe UI", Arial, sans-serif; font-size: 11px; fill: #ffffff; }
+      .uac-heading { font-family: "Segoe UI", Arial, sans-serif; font-size: 16px; font-weight: 400; fill: #ffffff; }
+      .app-title { font-family: "Segoe UI", Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #1a1a1a; }
+      .app-pub { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; fill: #555555; }
+      .app-link { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; fill: #0066cc; text-decoration: underline; }
+      .btn { fill: #e1e1e1; stroke: #adadad; stroke-width: 1; }
+      .btn-focus { fill: #e1e1e1; stroke: #000000; stroke-width: 2; }
+      .btn-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; fill: #000000; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Dialog Frame -->
+  <rect x="0" y="0" width="480" height="300" class="uac-frame" />
+
+  <!-- Top Blue Header -->
+  <rect x="0" y="0" width="480" height="98" class="uac-header" />
+  <text x="18" y="24" class="uac-title">User Account Control</text>
+
+  <!-- Close button X in header -->
+  <line x1="456" y1="14" x2="464" y2="22" stroke="#ffffff" stroke-width="1.2" />
+  <line x1="464" y1="14" x2="456" y2="22" stroke="#ffffff" stroke-width="1.2" />
+
+  <!-- Main Question -->
+  <text x="18" y="60" class="uac-heading">Do you want to allow this app to make</text>
+  <text x="18" y="82" class="uac-heading">changes to your device?</text>
+
+  <!-- Content Section -->
+  <!-- Console Window Host Icon -->
+  <g transform="translate(20, 116)">
+    <rect x="0" y="0" width="34" height="28" fill="#111111" stroke="#c0a060" stroke-width="1.5" />
+    <rect x="0" y="0" width="34" height="6" fill="#444444" />
+    <text x="3" y="19" font-family="Consolas, monospace" font-size="9" font-weight="bold" fill="#ffffff">C:\_</text>
+  </g>
+
+  <!-- App Title and Publisher -->
+  <text x="66" y="136" class="app-title">Console Window Host</text>
+  <text x="66" y="168" class="app-pub">Verified publisher: Microsoft Windows</text>
+  <text x="66" y="200" class="app-link">Show more details</text>
+
+  <!-- Action Buttons -->
+  <!-- Yes Button -->
+  <rect x="70" y="240" width="165" height="30" class="btn" />
+  <text x="152" y="260" class="btn-text">Yes</text>
+
+  <!-- No Button (Focused default) -->
+  <rect x="250" y="240" width="165" height="30" class="btn-focus" />
+  <text x="332" y="260" class="btn-text">No</text>
+</svg>

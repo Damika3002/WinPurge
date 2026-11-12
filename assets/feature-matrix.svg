@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0c0c0c; stroke: #262626; stroke-width: 1; }
+      .header-bg { fill: #171717; }
+      .row-alt { fill: #111111; }
+      .col-highlight { fill: rgba(16, 185, 129, 0.05); }
+      .title-text { font-family: "Segoe UI", Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #888888; text-transform: uppercase; letter-spacing: 0.5px; }
+      .title-wp { font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #38bdf8; }
+      .cell-label { font-family: "Segoe UI", Arial, sans-serif; font-size: 11px; font-weight: 600; fill: #e5e5e5; }
+      .cell-wp { font-family: "Consolas", monospace; font-size: 10.5px; font-weight: bold; fill: #4ade80; }
+      .cell-com { font-family: "Segoe UI", Arial, sans-serif; font-size: 10.5px; fill: #f87171; }
+      .cell-gen { font-family: "Segoe UI", Arial, sans-serif; font-size: 10.5px; fill: #a3a3a3; }
+      .cell-warn { font-family: "Segoe UI", Arial, sans-serif; font-size: 10.5px; fill: #fbbf24; }
+      .divider { stroke: #262626; stroke-width: 1; }
+      .hl-border { stroke: #059669; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="640" height="320" class="bg" rx="4" />
+
+  <!-- Table Header -->
+  <rect x="0" y="0" width="640" height="38" class="header-bg" rx="4" />
+  <text x="18" y="24" class="title-text">Feature &amp; Safety Metric</text>
+  <text x="235" y="24" class="title-wp">WinPurge v1.0</text>
+  <text x="390" y="24" class="title-text">Commercial Cleaners</text>
+  <text x="525" y="24" class="title-text">Generic Batch Scripts</text>
+
+  <!-- WinPurge Column Highlight -->
+  <rect x="220" y="38" width="150" height="282" class="col-highlight" />
+
+  <!-- Row 1: Background Daemons -->
+  <rect x="0" y="38" width="640" height="46" class="row-alt" />
+  <text x="18" y="65" class="cell-label">Background Telemetry &amp; Services</text>
+  <text x="235" y="65" class="cell-wp">Zero [No Daemons]</text>
+  <text x="390" y="65" class="cell-com">Resident TSR / Tracking</text>
+  <text x="525" y="65" class="cell-wp">Zero [None]</text>
+  <line x1="0" y1="84" x2="640" y2="84" class="divider" />
+
+  <!-- Row 2: Runtimes / Installation -->
+  <rect x="0" y="84" width="640" height="46" />
+  <text x="18" y="111" class="cell-label">Installation &amp; Runtimes</text>
+  <text x="235" y="111" class="cell-wp">Portable [Native Batch]</text>
+  <text x="390" y="111" class="cell-com">Installer &amp; Extras</text>
+  <text x="525" y="111" class="cell-wp">Portable</text>
+  <line x1="0" y1="130" x2="640" y2="130" class="divider" />
+
+  <!-- Row 3: Deletion Metrics -->
+  <rect x="0" y="130" width="640" height="46" class="row-alt" />
+  <text x="18" y="157" class="cell-label">File Deletion Accounting</text>
+  <text x="235" y="157" class="cell-wp">Real Before/After [OK]</text>
+  <text x="390" y="157" class="cell-warn">Estimated Guess</text>
+  <text x="525" y="157" class="cell-com">Blind Deletion [>nul]</text>
+  <line x1="0" y1="176" x2="640" y2="176" class="divider" />
+
+  <!-- Row 4: Locked File Safety -->
+  <rect x="0" y="176" width="640" height="46" />
+  <text x="18" y="203" class="cell-label">In-Use / Locked File Protection</text>
+  <text x="235" y="203" class="cell-wp">Tracked &amp; Skipped Safely</text>
+  <text x="390" y="203" class="cell-warn">Forced Unlock Risk</text>
+  <text x="525" y="203" class="cell-com">Fails Silently</text>
+  <line x1="0" y1="222" x2="640" y2="222" class="divider" />
+
+  <!-- Row 5: Component Store (DISM) -->
+  <rect x="0" y="222" width="640" height="46" class="row-alt" />
+  <text x="18" y="249" class="cell-label">Windows Component Store (DISM)</text>
+  <text x="235" y="249" class="cell-wp">Live Progress Streaming</text>
+  <text x="390" y="249" class="cell-com">Not Supported</text>
+  <text x="525" y="249" class="cell-com">Hidden / Frozen</text>
+  <line x1="0" y1="268" x2="640" y2="268" class="divider" />
+
+  <!-- Row 6: Safety Defaults -->
+  <rect x="0" y="268" width="640" height="52" />
+  <text x="18" y="297" class="cell-label">Recycle Bin Safety Default</text>
+  <text x="235" y="297" class="cell-wp">[N] Preserve [Protected]</text>
+  <text x="390" y="297" class="cell-warn">Auto-Purged by Default</text>
+  <text x="525" y="297" class="cell-com">Forced Wipe / No Choice</text>
+</svg>
